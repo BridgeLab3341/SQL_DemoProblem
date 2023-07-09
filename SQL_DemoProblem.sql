@@ -8,8 +8,13 @@ Insert into EngineersData (Name,Gender,Salary,Address) values('Somashekar','M',2
 Insert into EngineersData (Name,Gender,Salary,Address) values('AnilKumar','M',25000,'Banglore')
 Insert into EngineersData (Name,Gender,Salary,Address) values('Anu','F',24000,'Banglore')
 Insert into EngineersData (Name,Gender,Salary,Address) values('Moni','F',24000,'Banglore')
+Insert into EngineersData (Name,Gender,Salary,Address) values('Manju','M',28000,'Banglore')
+Insert into EngineersData (Name,Gender,Salary,Address) values('Rani','F',22000,'Banglore')
 --UC-4
 Alter table EngineersData add State varchar(15) NOT NULL Default 'abc'
 update EngineersData set Address ='Delhi' where Id=2
 --UC-5
 Delete from EngineersData where Id=3
+--UC-6
+select Min(Salary) as Minimum_Salary from EngineersData
+Select Max(Salary) as Maximum_Salary from EngineersData
