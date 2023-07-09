@@ -21,3 +21,6 @@ Select Max(Salary) as Maximum_Salary from EngineersData
 --UC-7
 Select COUNT(Id) as NUmber_of_Rows from EngineersData
 Select SUM(Salary) as Total_Salary from EngineersData
+--UC-8
+Select Top(2) * from EngineersData
+Select * from EngineersData where Id=5
