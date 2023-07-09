@@ -18,3 +18,6 @@ Delete from EngineersData where Id=3
 --UC-6
 select Min(Salary) as Minimum_Salary from EngineersData
 Select Max(Salary) as Maximum_Salary from EngineersData
+--UC-7
+Select COUNT(Id) as NUmber_of_Rows from EngineersData
+Select SUM(Salary) as Total_Salary from EngineersData
