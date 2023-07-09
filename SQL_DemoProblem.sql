@@ -11,3 +11,5 @@ Insert into EngineersData (Name,Gender,Salary,Address) values('Moni','F',24000,'
 --UC-4
 Alter table EngineersData add State varchar(15) NOT NULL Default 'abc'
 update EngineersData set Address ='Delhi' where Id=2
+--UC-5
+Delete from EngineersData where Id=3
